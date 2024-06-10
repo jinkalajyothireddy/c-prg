@@ -1,0 +1,25 @@
+Accept two integer values from the user and return their product. If the product is greater than 1000, then return their sum
+Input Format:
+Line 1: 1st Number value Line 2: 2nd Number value
+Constraints:
+1<=num1<=10^7 1<=num2,=10^7
+
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    long long product;
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+  
+    product = (long long)num1 * (long long)num2;
+    
+
+    if (product > 1000) {
+        printf("%d\n", num1 + num2);
+    } else {
+        printf("%lld\n", product);
+    }
+    
+    return 0;
+}

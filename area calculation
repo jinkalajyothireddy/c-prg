@@ -1,0 +1,28 @@
+Sheela has three things in her bag. She wants to compute the area of 3 things but 3 things are in different shapes. The three things are in a square shape, rectangular shape, and circular shape
+respectively. Write a program to help Sheela to calculate the area of different shapes.
+Input Format :
+First input: a side of a square in integer Second input: length of a rectangle in integer Third input: breadth of a rectangle in integer Fourth input: radius of a circle in float
+Constraints:
+1<=side of square <=10**9 1<=length of rectangle<=10**9 1<=breadth of rectangle<=10**9 1<=radius<=10**9
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   int a,b,c; 
+   float d; 
+    scanf("%d %d %d %f",&a,&b,&c,&d); 
+    int areaofasquare,areaofarectangle; 
+    float areaofacircle; areaofasquare=a*a; 
+    printf("%d\n",areaofasquare); 
+    areaofarectangle= b*c; 
+    printf("%d\n",areaofarectangle); 
+    areaofacircle=3.14*d*d; 
+    printf("%.2f",areaofacircle);   
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}

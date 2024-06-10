@@ -1,0 +1,30 @@
+Accept total number of participants in class. A group of four divisions has to be created from registered participants. Total no of participants “P” 100>=p<=200 Note: If number of
+participants entered by user is less than 100 or greater than 200 display “INVALID INPUT” and quit.
+Input Format:
+Take number of students in a class
+Constraints:
+100>=p<=200
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int p;
+    scanf("%d", &p); 
+    if (p >= 100 && p <= 200)
+    {
+        int r = p/4; printf("%d\n%d\n%d\n%d\n",r, r, r, r+p%4); 
+    }
+    else
+    {
+        printf("INVALID INPUT");
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+

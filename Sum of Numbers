@@ -1,0 +1,29 @@
+Write a program to print the sum of the given numbers. The values must be scanned until the user enters -1 as value.
+Input Format:
+Input consists of a list of integers.
+Constraints:
+1<=n<=10^7
+Output Format:
+The output consists of the sum of the given integers.
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int sum,n;
+    sum=0;
+    do{
+        scanf("%d",&n);
+        if(n!=-1)
+            sum=sum+n;
+    }
+    while(n!=-1);
+        printf("%d",sum);
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}

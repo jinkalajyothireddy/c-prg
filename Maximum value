@@ -1,0 +1,36 @@
+Write a program to find the maximum element in an array.
+Input Format:
+Integer corresponds to the size of the array. Read n elements line by line
+Constraints:
+1<=n<=10^7
+Output Format:
+Print maximum value
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int i,min,n,a[5];
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+    scanf("%d",&a[i]);
+    }
+    min=a[0];
+    for(i=1;i<n;i++)
+    {
+    if(min<a[i])
+        {
+            min=a[i];
+        }
+    }
+        printf("%d",min);
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}

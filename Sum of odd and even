@@ -1,0 +1,38 @@
+Write a program to sum of even and odd elements in an array.
+Input Format:
+Integer corresponds to the size of the array. Read n elements line by line
+Constraints:
+1<=n<=10^7
+Output Format:
+Print Odd sum Print Even sum
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i,n,esum,osum,a[5];
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0,esum=0,osum=0;i<n;i++)
+    {
+        if(a[i]%2==0)
+        {
+            esum=esum+a[i];
+        }
+        else
+        {
+            osum=osum+a[i];
+        }
+    }
+    printf("%d",osum);
+    printf("\n%d",esum);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}

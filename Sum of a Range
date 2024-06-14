@@ -1,0 +1,36 @@
+Write a program to print the sum of a given range of numbers
+Input Format:
+Input consists of 2 integers. First input corresponds to the minimum value of the range. Second input corresponds to the maximum value of the range.
+Constraints:
+1<=num1<=10^7
+Output Format:
+The output is an integer which corresponds to the sum of range.
+Sample Input 0:
+5
+10
+Sample Output 0:
+45
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,m,i,sum;
+    scanf("%d",&n);
+    scanf("%d",&m);
+    sum=0;
+    i=n;
+    while(i<=m)
+    {
+        sum=sum+i;
+       i++;
+    }
+     printf("%d",sum);
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}

@@ -1,0 +1,44 @@
+Printing Stars in Hollow Right Triangle Shape
+Input Format:
+Read n value
+Constraints:
+1<=n<=10^7
+Output Format:
+Printing Stars in Hollow Right Triangle Shape
+Sample Input 0:
+5
+Sample Output 0:
+* * * * * 
+  *     * 
+    *   * 
+      * * 
+        * 
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            if (i==1||i==j||j==n)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+    
+    printf("\n");
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
